@@ -1,0 +1,425 @@
+ /* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 50px 0;
+       /* Replace with your chosen gaming background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #e60000; /* Bloody Red */
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #000;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e60000;
+    text-shadow: 0 0 10px rgba(230, 0, 0, 0.8);
+}
+
+/* Steps Section */
+.steps {
+    background-color: #2c2c2c;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.steps h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e60000;
+    margin-bottom: 20px;
+}
+
+.steps ol {
+    list-style: decimal inside;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+}
+
+.steps li {
+    margin-bottom: 10px;
+}
+
+/* Links Section */
+.links {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.link-btn {
+    display: inline-block;
+    background-color: #e60000;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-btn:hover {
+    background-color: #b20000;
+    transform: scale(1.1);
+}
+
+/* Payment Section */
+.payment {
+    background-color: #2c2c2c;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.payment h2 {
+    font-size: 2.5rem;
+    color: #e60000;
+    margin-bottom: 20px;
+}
+
+.payment p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.payment-btn {
+    display: inline-block;
+    background-color: #e60000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-btn:hover {
+    background-color: #b20000;
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact-us {
+    background-color: #333;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+#contact-us h2 {
+    font-size: 2.5rem;
+    color: #e60000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact-us h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+#contact-us p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+#contact-us a {
+    color: #fa2222;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact-us a:hover {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .steps h2 {
+        font-size: 2rem;
+    }
+
+    .steps ol {
+        font-size: 1rem;
+    }
+
+    .link-btn, .payment-btn {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+
+    #contact-us h2 {
+        font-size: 2rem;
+    }
+}
+header h2 {
+    font-size: rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #837d7d; /* Bloody Red */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 25px #240505, 0 0 5px #ff0000;
+    letter-spacing: 5px;
+    position: relative;
+    animation: glowing 1.5s ease-in-out infinite alternate;
+    text-align: center;
+    margin: 0;
+    
+}
+
+/* Glowing Animation */
+
+
+
+/* Optional: Add a subtle background animation to the header */
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e60000; /* Bloody Red */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 25px #e60000, 0 0 5px #ff0000;
+    letter-spacing: 5px;
+    position: relative;
+    animation: glowing 1.5s ease-in-out infinite alternate;
+    text-align: center;
+    margin: 10px 0; /* Reduced margin */
+}
+
+/* Glowing Animation */
+@keyframes glowing {
+    0% {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 25px #e60000, 0 0 5px #ff0000;
+        color: #e60000;
+    }
+    50% {
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7), 0 0 35px #ff0000, 0 0 15px #ff6666;
+        color: #ff6666;
+    }
+    100% {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 25px #e60000, 0 0 5px #ff0000;
+        color: #e60000;
+    }
+}
+
+/* Optional: Add a subtle background animation to the header */
+header {
+    text-align: center;
+    padding: 60px 20px; /* Reduced padding for less space around */
+    background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(230, 0, 0, 0.7));
+    background-size: 400% 400%;
+    animation: gradientMotion 10s ease infinite;
+}
+
+@keyframes gradientMotion {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Navigation Bar */
+nav {
+    background-color: #000;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Adds space between each link */
+    background-image: url("https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg");
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #f0f0f0; /* Default link color */
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e60000; /* Red color on hover */
+    text-shadow: 0 0 10px rgba(230, 0, 0, 0.8); /* Red glow effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add delays so each step appears after the previous one */
+.step:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.step:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.step:nth-child(3) {
+  animation-delay: 0.6s;
+}
+/* Ensure the navigation links are displayed inline */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligns items in a row */
+    justify-content: space-between; /* Optional: space out the links */
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(65, 139, 105);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007BFF; /* Change the color on hover */
+}
+/* Set the default link color to red */
+a {
+    color: rgb(238, 7, 7);
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+/* Optional: Add hover effect to change color when the user hovers over the links */
+a:hover {
+    color: rgb(33, 148, 94); /* Darker red on hover */
+}
